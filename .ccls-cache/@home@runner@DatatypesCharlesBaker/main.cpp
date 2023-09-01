@@ -8,10 +8,10 @@ Summary: Take an integer representing pennies as input, calculate the conversion
 using namespace std;
 
 // Constants
-int DOLLAR = 100;
-int QUARTER = 25;
-int DIME = 10;
-int NICKEL = 5;
+const int DOLLAR = 100;
+const int QUARTER = 25;
+const int DIME = 10;
+const int NICKEL = 5;
 
 
 int main() {
