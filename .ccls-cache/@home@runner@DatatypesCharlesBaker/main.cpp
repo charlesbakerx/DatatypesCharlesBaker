@@ -7,6 +7,13 @@ Summary: Take an integer representing pennies as input, calculate the conversion
 #include <iostream>
 using namespace std;
 
+// Constants
+int DOLLAR = 100;
+int QUARTER = 25;
+int DIME = 10;
+int NICKEL = 5;
+
+
 int main() {
   // Variable Declaration
   int dollars;
@@ -21,22 +28,27 @@ int main() {
 
   // Process
   // Convert dollars
-  dollars = pennies / 100;
+  dollars = pennies / DOLLAR;
   // mod to determine leftover pennies
-  pennies = pennies % 100;
+  pennies = pennies % DOLLAR;
   // Convert quarters
-  quarters = pennies / 25;
+  quarters = pennies / QUARTER;
   // mod to determine leftover pennies
-  pennies = pennies % 25;
+  pennies = pennies % QUARTER;
   // Convert dimes
-  dimes = pennies / 10;
+  dimes = pennies / DIME;
   // mod
-  pennies = pennies % 10;
+  pennies = pennies % DIME;
   // Convert nickels
-  nickels = pennies / 5;
+  nickels = pennies / NICKEL;
   // mod
-  pennies = pennies % 5;
+  pennies = pennies % NICKEL;
 
   // Output
   cout << "Dollars = " << dollars << endl; 
+  cout << "Quarters = " << quarters << endl;
+  cout << "Dimes = " << dimes << endl;
+  cout << "Nickels = " << nickels<< endl;
+  cout << "Pennies = " << pennies << endl;
+  
 }
